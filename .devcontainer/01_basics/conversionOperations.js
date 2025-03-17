@@ -67,3 +67,39 @@ console.log(typeof String(bVariable) )
 let cVariable= 67.9
 console.log(String(cVariable))
 console.log(typeof String(cVariable))
+
+//********************************************operations***********************************************
+
+
+ //operations as in initially some basic mathematic operations-->+,-*,/,%(to get remainder)
+ let value=3
+ let negvalue= -value
+ console.log(negvalue)
+
+ //then string concatination using + operator
+ let str1="neha"
+ let str2="dubey"
+ let str3= str1+str2
+ console.log(str3)
+
+ console.log("1"+ 2)  //output is 12
+ console.log(2+"1")   //output is 21
+ console.log(2+1+"3")   //33
+ console.log("1"+2+4+5)  //1245
+ console.log(true)
+ console.log(+true)  //1
+ console.log(+"")  //0
+
+
+ let num1, num2, num3
+ num1=num2=num3=2+2
+
+
+ /*prefix nd postfix operator- prefix- value increases/decreases first then use further, postfix-- fisr var is used then
+ its value gets increased or decreased */
+
+ let gameCounter=100
+ gameCounter++
+ console.log(gameCounter);  //output is 101 , even for ++gameCounter too the value will be 101
+
+ 
