@@ -44,9 +44,9 @@ const bigNumber= 454657897654356789765432344545n
        BigInt  =>  bigint
 
 2) Non-primitive Datatypes
-       Arrays  =>  object
-       Function  =>  function
-       Object  =>  object
+       Arrays([]) =>  object
+       Function (funcname(){}) =>  function
+       Object({}) =>  object
 
 JavaScript is a dynamically typed language. This means that variable types are determined at runtime, 
 and you do not need to explicitly declare the type of a variable before using it. You can assign different 
@@ -68,6 +68,39 @@ String name = "John"; // name is a variable of type String
 JavaScript's dynamic typing allows for more flexibility but can lead to potential runtime errors if not handled carefully.
 Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 */
+
+//*****************************************memory********************************//
+
+/*primitive- stack memory-we get a copy of variable we have declared
+non- primitive- heap-- reference- whatever changes we will perform it will get changed in the original value not any copy
+*/
+
+let myGithubName= "neha.d"
+let anotherName=myGithubName
+anotherName="jsCode"
+console.log(myGithubName);
+console.log(anotherName);
+
+//since anotherName has copy of myFithubName so any changes in anotherName will apply in copy of 
+// myGithubName only not the original so line-81 output is neha.d and jscode in line-82
+
+let user = {
+       username:"Buddy",
+       email:"buddyOS@gmail.com"
+}
+
+let anotherUser={
+       name:"Oscar",
+       email:"OscarCutu@gmail.com"
+}
+
+let thirdUser=anotherUser
+thirdUser.email="Shadowthebos@gmail.com"
+console.log(anotherUser.email);
+console.log(thirdUser.email);
+
+//change got reflected in the original variable to as it was a referece to thirdUser variable.
+
 
 
 
